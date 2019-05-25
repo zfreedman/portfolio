@@ -1,0 +1,47 @@
+#blinkingCursor {
+  animation: blinkingCursor 1.5s infinite;
+  background-color: white;
+  border-radius: 4px;
+  content: '__';
+  min-height: '100px';
+  min-width: '25px';
+  /* transition: background-color 500ms; */
+}
+
+.blinkingCursorBack,
+.blinkingCursorTyping {
+  /* transition: background-color 0; */
+}
+.blinkingCursorBack {
+  background-color: #ff0066 !important;
+}
+.blinkingCursorTyping {
+  background-color: #33ccff !important;
+}
+
+.typeBox {
+  align-items: center;
+  display: flex;
+  font-size: 48px;
+  height: 100vh;
+  padding: 20px;
+  width: 100%;
+}
+
+@keyframes blinkingCursor {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
