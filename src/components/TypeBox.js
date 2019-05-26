@@ -48,6 +48,13 @@ class TypeBox extends React.PureComponent {
     this.type()
   }
 
+  componentWillUnmount() {
+    // clear any typing/backspacing logic
+    clearInterval(this.interval)
+    // clear any wait logic
+    clearTimeout(this.timeout)
+  }
+
   /**
    * Gets the current information.
    * @method
@@ -113,7 +120,8 @@ class TypeBox extends React.PureComponent {
 
     // setup wait
     this.setState({ typingState: TYPING_STATE_IDLE })
-    setTimeout(() => {
+    this.timeout = setTimeout(() => {
+      clearTimeout(this.timeout)
       this.backspace()
     }, waitAfterDone)
   }

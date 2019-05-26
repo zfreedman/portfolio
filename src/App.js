@@ -16,7 +16,7 @@ class App extends React.PureComponent {
 
     this.welcomeInfo = [
       new TypeBoxInfo('Hey. =)', 200, 2000, 500),
-      // new TypeBoxInfo('This was left for you by Zach.', 100, 3000, 50),
+      new TypeBoxInfo('This was left for you by Zach.', 100, 3000, 50),
     ]
 
     this.state = {

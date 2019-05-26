@@ -1,0 +1,79 @@
+.equation {
+  /* margin-top: -300px; */
+}
+.equation > * {
+  margin: 0 5px;
+}
+
+#math {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 48px;
+  height: 100vh;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.mathCorrect {
+  animation: mathCorrect 1s;
+  opacity: 0;
+}
+
+.mathEquals {
+  color: #ff0066 !important;
+}
+
+.mathInput {
+  background: none;
+  /* min-width: 50px; */
+  border: none;
+  /* border-bottom: 1px solid white; */
+  color: white;
+  font-size: 48px;
+  max-width: 200px;
+  outline: none;
+  padding: 5px;
+  text-align: center;
+}
+
+.mathOperator {
+  color: #33ccff;
+}
+
+.mathProgress {
+  /* margin-bottom: 600px; */
+  font-size: 60px;
+  text-align: center;
+  width: 100%;
+}
+
+#mathScoreboard {
+  bottom: 0;
+  left: 0;
+  display: flex;
+  font-size: 24px;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
+#mathScoreboard > * {
+  margin: 0 auto;
+}
+
+@keyframes mathCorrect {
+  0% {
+    color: white;
+    opacity: 1;
+  }
+
+  50% {
+    color: #99ff33;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
