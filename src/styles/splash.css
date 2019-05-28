@@ -1,0 +1,42 @@
+.splash {
+  padding: 40px;
+}
+.splash > img {
+  animation: splashImage 1s;
+  -webkit-filter: grayscale(100%);
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  height: 150px;
+  margin: 0 auto 20px;
+  opacity: 1;
+  transform: rotate(90deg);
+  width: 150px;
+}
+
+.splashInfo {
+  animation: splashInfo 1s 0s;
+  opacity: 1;
+}
+
+.splashInfoRight {
+  margin: 0;
+  text-align: right;
+}
+
+@keyframes splashImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes splashInfo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

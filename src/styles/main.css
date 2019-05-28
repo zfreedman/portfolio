@@ -1,6 +1,43 @@
-#main {
+.componentActive {
+  background-color: white;
+  color: black !important;
+}
+
+.componentBar {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  height: 40px;
+  left: 0;
+  /* max-height: 40px;
+  min-height: 40px; */
+  justify-content: center;
+  position: fixed;
+  text-align: center;
+  top: 75px;
+  width: 100%;
+  z-index: 1;
+}
+.componentBar > * {
   align-items: center;
   display: flex;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
+  transition: background-color 1000ms, color 1000ms;
+  width: 100%;
+  /* width: 100px; */
+}
+.componentBar > *:not(:first-child) {
+  border-left: 2px solid white;
+}
+
+#main {
+  /* align-items: center; */
+  /* display: flex; */
+  height: 100vh;
+  /* justify-content: center; */
+}
+
+.mainContent {
+  padding-top: 115px;
 }
